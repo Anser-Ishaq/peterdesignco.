@@ -18,7 +18,7 @@ const CustomButton = ({ layout, border, width, height, text, onClick, background
 
     return (
         <div className={`${layout} relative`}>
-            <button className={`flex gap-2.5 ${padding} ${backgroundColor} ${textColor} ${border} `}>
+            <button className={`flex gap-2.5 whitespace-nowrap ${padding} ${backgroundColor} ${textColor} ${border} `}>
                 {text}
                 {icon &&
                     <img src={icon} alt="arrow" className="" />
