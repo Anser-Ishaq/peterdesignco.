@@ -13,7 +13,36 @@ body {
 
 @theme {
   --color-primary: #666666;
-  --color-gold:#D4AC56;
+  --color-gold: #D4AC56;
+  --color-dark-gold: #CA9A32;
   --color-accent: #EEEAE6;
+  --color-gray: #F5F5F5;
+  --color-dark-gray: #CCCCCC;
 
+}
+
+/* slider */
+.swiper-slide {
+  @apply rounded-2xl! relative!;
+}
+
+/* accordion */
+.ant-collapse {
+  @apply border-0! w-full lg:w-[80%]!;
+}
+
+.ant-collapse .ant-collapse-content {
+  @apply border-0! bg-dark-gray font-normal! text-base! text-black!;
+}
+
+.ant-collapse-item {
+  @apply bg-dark-gray mb-3 rounded-2xl!;
+}
+
+:where(.css-dev-only-do-not-override-kk2c0l).ant-collapse-large >.ant-collapse-item >.ant-collapse-header {
+  @apply flex flex-row-reverse px-6! pt-6!;
+}
+
+.ant-collapse-header-text {
+  @apply font-medium! text-base! text-black!;
 }
